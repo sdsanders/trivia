@@ -1,0 +1,39 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  background: #3f51b5;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.1;
+  padding: 5vh 5vw;
+  text-align: center;
+}
+
+.clue {
+  color: #fff;
+  font-size: 8vh;
+  margin-bottom: 5vh;
+  text-transform: uppercase;
+}
+
+.answer {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 4vh;
+  width: 50vw;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .clue {
+    margin: 0 auto;
+    max-width: 50vw;
+  }
+}

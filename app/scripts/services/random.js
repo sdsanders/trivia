@@ -11,6 +11,7 @@ angular.module('triviaApp')
   .factory('Random', function ($resource) {
     var factory = {};
     var baseUrl = "http://jservice.io/api/random";
-
-    return $resource(baseUrl);
+    var question = $resource(baseUrl);
+    
+    return question;
   });
